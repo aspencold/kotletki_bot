@@ -67,6 +67,4 @@ app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("recipe", recipe))
 app.add_handler(CommandHandler("add", add))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_input))
-from import_recipes import import_recipes
-import_recipes()
 app.run_polling()
